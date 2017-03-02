@@ -7,19 +7,19 @@
 <title>Usuario</title>
 </head>
 <body style="background-color:#D0F5A9;">
+ <br> <br> <br> <br> <br>
  <center>
-Hola ${user}
+<h1>Hola: ${user}</h1>
 <br>
 <form action="Contador" method="GET">
-NºVeces:  ${contador}
+<h3>NºVeces:  ${contador}</h3>
 
 <input type="submit" value="Sumar" />
 </form>
 <br>
 <br>
-<br>
-<form action="Registrarse" method="GET">
-  <input type="submit" value="Desconectate" />
+<form action="Logout.jsp" method="GET">
+  <input type="submit" value="Desconectarse" />
   </center>
 </form>
 </body>

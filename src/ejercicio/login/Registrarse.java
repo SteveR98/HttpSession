@@ -51,17 +51,17 @@ public class Registrarse extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession sesion = request.getSession();
-        String usu;
+        String usu=null;
         usu = request.getParameter("user");
-        sesion.getAttribute("contador");
         sesion.setAttribute("contador", 0);
         
-        if(sesion.getAttribute("usuario") == null)
+        if(sesion.getAttribute("user") == null)
         {
             
-            sesion.setAttribute("usuario", usu);
+            sesion.setAttribute("user", usu);
             
             response.sendRedirect("Usuario.jsp");
+
         }
         else
         {

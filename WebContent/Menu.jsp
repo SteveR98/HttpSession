@@ -7,12 +7,13 @@
 <title>INICIO</title>
 </head>
 <body style="background-color:#D0F5A9;">
+<br><br><br><br><br><br><br><br>
 <center>
 <form action="Registrarse" method="POST">
 
 NOMBRE:
-   <input type="text" name="nombre" value="" />
-   <input type="submit" value="SEND" />
+   <input type="text" name="user" value="" />
+   <input type="submit" value="ENVIAR" />
 </form>
 
  </center>
